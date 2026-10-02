@@ -1450,7 +1450,7 @@
     MCP:
     - MCP10
     MCP_sub: []
-  owasp_incidents: 0
+  owasp_incidents: 1
   owasp_vulns: 1
 - id: UT-13.2
   ut: UT-13
@@ -1977,7 +1977,7 @@
     MCP_sub:
     - MCP05
   owasp_incidents: 0
-  owasp_vulns: 0
+  owasp_vulns: 1
 - id: UT-19.1
   ut: UT-19
   name: 렌더링 채널 반출
@@ -2071,7 +2071,7 @@
     MCP: []
     MCP_sub: []
   owasp_incidents: 0
-  owasp_vulns: 0
+  owasp_vulns: 2
 - id: UT-20.1
   ut: UT-20
   name: 환각에 의한 허위정보
@@ -2097,7 +2097,7 @@
     - DSGAI21
     MCP: []
     MCP_sub: []
-  owasp_incidents: 0
+  owasp_incidents: 1
   owasp_vulns: 0
 - id: UT-20.3
   ut: UT-20
@@ -2156,7 +2156,7 @@
     DSGAI_sub: []
     MCP: []
     MCP_sub: []
-  owasp_incidents: 0
+  owasp_incidents: 1
   owasp_vulns: 0
 - id: UT-21.1
   ut: UT-21
@@ -2241,7 +2241,7 @@
     DSGAI_sub: []
     MCP: []
     MCP_sub: []
-  owasp_incidents: 0
+  owasp_incidents: 2
   owasp_vulns: 0
 - id: UT-21.4
   ut: UT-21
@@ -3032,7 +3032,7 @@
     MCP: []
     MCP_sub:
     - MCP04
-  owasp_incidents: 0
+  owasp_incidents: 1
   owasp_vulns: 0
 - id: UT-28.3
   ut: UT-28
@@ -3228,7 +3228,7 @@
     - MCP03
     MCP_sub: []
   owasp_incidents: 0
-  owasp_vulns: 0
+  owasp_vulns: 1
 - id: UT-29.4
   ut: UT-29
   name: 도구명 사칭
@@ -3460,7 +3460,7 @@
     - MCP09
     MCP_sub: []
   owasp_incidents: 0
-  owasp_vulns: 0
+  owasp_vulns: 1
 - id: UT-32.1
   ut: UT-32
   name: 브라우저 확장 과권한
@@ -3550,7 +3550,7 @@
     MCP_sub:
     - MCP02
   owasp_incidents: 0
-  owasp_vulns: 1
+  owasp_vulns: 2
 - id: UT-33.1
   ut: UT-33
   name: 관측성 도구 과다 수집
@@ -3577,7 +3577,7 @@
     MCP: []
     MCP_sub:
     - MCP01
-  owasp_incidents: 0
+  owasp_incidents: 1
   owasp_vulns: 0
 - id: UT-33.2
   ut: UT-33
