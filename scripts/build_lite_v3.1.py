@@ -101,14 +101,15 @@ copy_style(ws["A1"], sf["A1"]); copy_style(ws["A2"], sf["A2"])
 group_start = None
 for j, (group, name, _) in enumerate(COLS, start=1):
     if group:
-        if group_start:
+        if group_start and j - 1 > group_start:  # 단일 열 그룹은 병합하지 않음(Excel 복구 경고 방지)
             ws.merge_cells(start_row=3, start_column=group_start, end_row=3, end_column=j - 1)
         group_start = j
         ws.cell(3, j, group)
     c = ws.cell(3, j); c.font, c.fill, c.alignment, c.border = Font(bold=True, size=9, color=NAVY), GROUP_FILL, CENTER, BOX
     c = ws.cell(4, j, name); copy_style(c, sf["A4"])
     ws.column_dimensions[L(j)].width = WIDTH[name]
-ws.merge_cells(start_row=3, start_column=group_start, end_row=3, end_column=len(COLS))
+if len(COLS) > group_start:
+    ws.merge_cells(start_row=3, start_column=group_start, end_row=3, end_column=len(COLS))
 
 col_of = {name: L(j) for j, (_, name, _) in enumerate(COLS, start=1)}
 G, H = col_of["발생가능성"], col_of["심각도"]
